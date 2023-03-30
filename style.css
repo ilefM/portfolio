@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+
+:root {
+  --BG_COLOR: #d9d9d9;
+  --HEADER_BG_COLOR: #1b1c1d;
+  --HEADER_TEXT_COLOR: #ffffff;
+  --TEXT_COLOR: #222222;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background-color: var(--BG_COLOR);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--HEADER_BG_COLOR);
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.26);
+}
+
+header h2 {
+  color: var(--HEADER_TEXT_COLOR);
+  font-weight: normal;
+}
+
+nav {
+  align-self: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin-right: 18px;
+}
+
+nav a,
+label {
+  text-decoration: none;
+  color: var(--HEADER_TEXT_COLOR);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.about {
+  display: flex;
+  margin: 10%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.profilepic {
+  max-width: 30%;
+  max-height: 30%;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+.about-text {
+  font-family: sans-serif;
+  text-align: center;
+}
