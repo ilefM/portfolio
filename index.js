@@ -1,4 +1,11 @@
 function switchTheme() {
-  console.log("switched");
-  document.documentElement.style.setProperty("--HEADER_BG_COLOR", "#ffffff");
+  const lightTheme = "fa-regular fa-sun fa-lg";
+  const darkTheme = "fa-regular fa-moon fa-lg";
+
+  let switcher = document.getElementById("theme-switcher");
+  if (switcher.className === lightTheme) {
+    document.getElementById("theme-switcher").className = darkTheme;
+  } else {
+    document.getElementById("theme-switcher").className = lightTheme;
+  }
 }

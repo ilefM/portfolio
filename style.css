@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
 
 :root {
-  --BG_COLOR: #d9d9d9;
+  --BG_COLOR: #ffff;
   --HEADER_BG_COLOR: #1b1c1d;
   --HEADER_TEXT_COLOR: #ffffff;
   --TEXT_COLOR: #222222;
@@ -21,7 +21,10 @@ header {
   justify-content: space-between;
   padding: 20px;
   background-color: var(--HEADER_BG_COLOR);
-  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.18);
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 header h2 {
@@ -36,10 +39,11 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
+  margin-right: 30px;
 }
 
 nav li {
-  margin-right: 18px;
+  margin-right: 25px;
 }
 
 nav a,
@@ -48,25 +52,33 @@ label {
   color: var(--HEADER_TEXT_COLOR);
 }
 
+i {
+  cursor: pointer;
+  color: var(--HEADER_TEXT_COLOR);
+  margin-left: 15px;
+  width: 10px;
+}
+
 a:hover {
   text-decoration: underline;
 }
 
 .about {
   display: flex;
-  margin: 10%;
   align-items: center;
   justify-content: space-around;
+  margin: 20% 20% 0 20%;
 }
 
 .profilepic {
-  max-width: 30%;
-  max-height: 30%;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
-  margin: 20px;
 }
 
 .about-text {
-  font-family: sans-serif;
+  font-size: 27px;
+  font-weight: 500;
   text-align: center;
+  margin-left: 10px;
 }
