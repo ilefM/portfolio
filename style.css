@@ -21,6 +21,12 @@ body {
   font-weight: 200;
 }
 
+/****************************
+*****************************
+**********HEADER*************
+*****************************
+****************************/
+
 header {
   display: flex;
   justify-content: space-between;
@@ -57,7 +63,8 @@ label {
   color: var(--HEADER_TEXT_COLOR);
 }
 
-i {
+.fa-moon,
+.fa-sun {
   cursor: pointer;
   color: var(--HEADER_TEXT_COLOR);
   margin-left: 15px;
@@ -70,8 +77,13 @@ a:hover {
 
 section#about {
   background-color: var(--ABOUT_BACKGROUND);
-  background-size: cover;
 }
+
+/****************************
+*****************************
+***********ABOUT*************
+*****************************
+****************************/
 
 .about {
   display: flex;
@@ -82,8 +94,8 @@ section#about {
 }
 
 .profilepic {
-  width: 270px;
-  height: 270px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.18);
 }
@@ -98,6 +110,12 @@ section#about {
 section#projects {
   background-color: var(--PROJECTS_BACKGROUND);
 }
+
+/****************************
+*****************************
+**********Projects***********
+*****************************
+****************************/
 
 .projects {
   min-height: 100vh;
@@ -114,16 +132,10 @@ section#projects {
 .project {
   display: flex;
   justify-content: space-around;
-  margin: 10%;
-}
-
-.projectPreview img {
-  width: calc(745px * 0.68);
-  height: calc(513px * 0.68);
 }
 
 .projectDescription {
-  width: 25%;
+  width: 30%;
 }
 
 .projectDescription h3 {
@@ -135,26 +147,60 @@ section#projects {
   font-size: 18px;
 }
 
-.projectDescription a {
-  font-weight: 300;
-  text-decoration: underline;
-  color: var(--TEXT_COLOR);
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 20px 0;
 }
 
-.projectLinks {
-  margin-top: 15px;
+.link {
+  background-color: #14213d;
+  padding: 8px 8px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 120px;
+}
+
+.link:hover {
+  background-color: #344770;
+}
+
+.link a {
+  text-decoration: none;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.link i {
+  margin-right: 8px;
+  color: #ffffff;
+}
+
+.project img {
+  width: 40%;
 }
 
 @media screen and (max-width: 1000px) {
   .about,
   .project {
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
+
+  .profilepic {
+    width: 200px;
+    height: 200px;
+  }
+
   .about-text {
     margin-top: 50px;
   }
+
   .projectDescription {
-    width: 100%;
+    width: 80%;
+  }
+
+  .project img {
+    width: 80%;
   }
 }
