@@ -1,19 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300&display=swap");
 
 :root {
   --BG_COLOR: #ffff;
   --HEADER_BG_COLOR: #1b1c1d;
   --HEADER_TEXT_COLOR: #ffffff;
   --TEXT_COLOR: #222222;
+
+  /* section background */
+  --ABOUT_BACKGROUND: #faeedb;
+  --PROJECTS_BACKGROUND: #d0e2e2;
 }
 
 * {
   margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: "Mulish", sans-serif;
-  background-color: var(--BG_COLOR);
+  font-weight: 200;
 }
 
 header {
@@ -29,7 +34,7 @@ header {
 
 header h2 {
   color: var(--HEADER_TEXT_COLOR);
-  font-weight: normal;
+  font-weight: 200;
 }
 
 nav {
@@ -39,7 +44,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 nav li {
@@ -63,22 +68,93 @@ a:hover {
   text-decoration: underline;
 }
 
+section#about {
+  background-color: var(--ABOUT_BACKGROUND);
+  background-size: cover;
+}
+
 .about {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 20% 20% 0 20%;
+  justify-content: center;
+  margin: 0 20% 0 20%;
+  height: 100vh;
 }
 
 .profilepic {
   width: 270px;
   height: 270px;
   border-radius: 50%;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.18);
 }
 
 .about-text {
   font-size: 27px;
-  font-weight: 500;
+  font-weight: 300;
   text-align: center;
   margin-left: 10px;
+}
+
+section#projects {
+  background-color: var(--PROJECTS_BACKGROUND);
+}
+
+.projects {
+  min-height: 100vh;
+}
+
+.projects h2 {
+  font-size: 50px;
+  font-weight: 200;
+  margin-bottom: 150px;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.project {
+  display: flex;
+  justify-content: space-around;
+  margin: 10%;
+}
+
+.projectPreview img {
+  width: calc(745px * 0.68);
+  height: calc(513px * 0.68);
+}
+
+.projectDescription {
+  width: 25%;
+}
+
+.projectDescription h3 {
+  margin-bottom: 15px;
+}
+
+.projectDescription p {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.projectDescription a {
+  font-weight: 300;
+  text-decoration: underline;
+  color: var(--TEXT_COLOR);
+}
+
+.projectLinks {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about,
+  .project {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-text {
+    margin-top: 50px;
+  }
+  .projectDescription {
+    width: 100%;
+  }
 }

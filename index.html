@@ -21,9 +21,8 @@
       <div class="nf nf-dev-chrome center"></div>
       <nav>
         <ul>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#experiences">Work Experiences</a></li>
-          <li><a href="#studies">Formations</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">projects</a></li>
           <li><a href="#contact-me">Contact</a></li>
           <li>
             <i
@@ -35,19 +34,57 @@
         </ul>
       </nav>
     </header>
-
     <main>
-      <div id="about" class="about">
-        <img class="profilepic" src="./assets/profilepic.jpg" />
-        <p class="about-text">
-          Computer science student into tech stuff. I solve problems and get
-          shit done with logic
-        </p>
-      </div>
-      <div class="projects">
-        <p></p>
-        <div class="project"></div>
-      </div>
+      <section id="about">
+        <div class="about">
+          <img class="profilepic" src="./assets/profilepic.jpg" />
+          <p class="about-text">
+            Computer science student into tech stuff. Currently, I'm trying to
+            get familiar with the Javascript ecosystem.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="projects">
+          <h2 class="sectionName">Projects</h2>
+          <div class="project">
+            <div class="projectDescription">
+              <h3>Password Generator</h3>
+              <p>
+                This small project was a password generator web app made with
+                React Typecript and Styled Components. The goal of this project
+                was to get familiar with React and learn how to manage states
+                between parents and childs components.
+              </p>
+              <div class="projectLinks">
+                <a
+                  href="https://ilefm.github.io/password-generator"
+                  target="_blank"
+                  >View on live</a
+                ><br />
+              </div>
+              <div class="projectLinks">
+                <a
+                  href="https://github.com/ilefM/password-generator"
+                  target="_blank"
+                  >Github repo</a
+                >
+              </div>
+            </div>
+
+            <div class="projectPreview">
+              <img src="./assets/passwordgenerator.png" />
+            </div>
+          </div>
+          <div class="project">
+            <div class="projectDescription">
+              <h3>Backend Authentication</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
