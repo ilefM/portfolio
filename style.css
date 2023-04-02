@@ -3,12 +3,12 @@
 :root {
   --BG_COLOR: #ffff;
   --HEADER_BG_COLOR: #1b1c1d;
-  --HEADER_TEXT_COLOR: #ffffff;
+  --HEADER_TEXT_COLOR: #ffff;
   --TEXT_COLOR: #222222;
 
   /* section background */
   --ABOUT_BACKGROUND: #faeedb;
-  --PROJECTS_BACKGROUND: #d0e2e2;
+  --PROJECTS_BACKGROUND: #b8d0bd;
 }
 
 * {
@@ -47,18 +47,17 @@ nav {
   align-self: center;
 }
 
-nav ul {
+.menu {
   display: flex;
   list-style: none;
   margin-right: 50px;
 }
 
-nav li {
+.menu-item {
   margin-right: 25px;
 }
 
-nav a,
-label {
+.menu-link {
   text-decoration: none;
   color: var(--HEADER_TEXT_COLOR);
 }
@@ -71,12 +70,8 @@ label {
   width: 10px;
 }
 
-a:hover {
+.menu-link:hover {
   text-decoration: underline;
-}
-
-section#about {
-  background-color: var(--ABOUT_BACKGROUND);
 }
 
 /****************************
@@ -84,12 +79,15 @@ section#about {
 ***********ABOUT*************
 *****************************
 ****************************/
+section#about {
+  background-color: var(--ABOUT_BACKGROUND);
+}
 
 .about {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 20% 0 20%;
+  margin: 0 20%;
   height: 100vh;
 }
 
@@ -154,7 +152,7 @@ section#projects {
 }
 
 .link {
-  background-color: #14213d;
+  background-color: #284b63;
   padding: 8px 8px;
   border-radius: 30px;
   cursor: pointer;
@@ -162,7 +160,7 @@ section#projects {
 }
 
 .link:hover {
-  background-color: #344770;
+  background-color: #507086;
 }
 
 .link a {
@@ -201,6 +199,6 @@ section#projects {
   }
 
   .project img {
-    width: 80%;
+    width: 60%;
   }
 }
